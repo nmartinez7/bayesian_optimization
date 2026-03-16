@@ -37,7 +37,7 @@ To start with something simple, we simulate a square grid (2000 km x 2000 km) wh
 In oil exploration, the objective function is the volume of oil extracted at a specific coordinate (latitude, longitude). Since drilling a test well can cost millions of dollars, we treat this square grid as a black box and use Bayesian Optimization to pick the next drilling site. 
 
 ### 1. The Objective Function
-We define a function $f(x)$, where $x$ represents a coordinate. We **don't** know the shape of $f(x)$ — that is, we only get to observe its value by drilling. Say, to start we have a few observation points $$D = \{(x_1, y_1), \dots, (x_n, y_n)\}$$, where $y$ is the oil yield in # of barrels/day.
+We define a function $f(x)$, where $x$ represents a coordinate. We **don't** know the shape of $f(x)$ — that is, we only get to observe its value by drilling. Say, to start we have a few observation points $$D = \\{(x_1, y_1), \dots, (x_n, y_n)\\}$$, where $y$ is the oil yield in # of barrels/day.
 
 ### 2. The Gaussian Process (GP)
 As mentioned in the introduction, we assume $f(x)$ follows a Gaussian Process. This is a collection of random variables, any number of which have a joint Gaussian distribution. A GP is defined by a mean 
